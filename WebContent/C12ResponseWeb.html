@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C12ResponseWeb.html</title>
+    <style type="text/css">
+    /* 전체선택자를 통해 문서의 기본스타일 지정 */
+    *{margin:0; padding: 0; font-family: Verdana;}
+    
+    /* Block엘리먼트 자체에 대한 가운데 정렬을 위해 margin이 사용된다.*/
+    #AllWrap{
+        margin:0 auto; text-align: center;
+    }
+    #PartWrap{
+        width:100%; text-align: left;
+        border:1px solid blue;
+    }
+    #header{
+        border:1px solid blue; text-align: center;
+        height: 100%; line-height: 100px;
+    }
+    /*
+    <li>태그의 기본 블릿을 제거한다.
+    overflow의 속성값
+        visible : 컨텐츠가 박스를 넘어가도 보임.
+        hidden : 박스를 벗어난 부분은 숨겨짐.
+        scroll : 컨텐츠와는 상관없이 무조건 스크롤바 생김.
+        auto : 컨텐츠의 상황에 따라 스크롤바 토글됨.
+    */
+    #nav ul{
+        list-style: none;
+        overflow: hidden;
+    }
+    #nav ul li{
+        font-size: 1.5em; font-weight: bold; height:50px;
+        width:20%; float:left; border:1px solid blue;
+        text-align: center; line-height: 50px;
+        /* 전체넓이에 패딩과 보더를 포함하여 지정함 */
+        box-sizing: border-box;
+    }
+    #ContentWrap #content > h2{
+        border-bottom:1px #808080 solid;
+        font-size: 2em;
+    }
+    #content{
+        padding: 20px;
+    }
+    #footer{
+        font-size: 2em; font-weight: bold; height: 100px;
+        line-height: 100px; text-align: center;
+        border:1px solid blue;
+    }
+
+    /* 스크린의 크기가 640px 이상일때(혹은 디바이스)에서의 보임설정 */
+    @media screen and (max-width:640px){
+        #AllWrap{ width:100%; }
+        #content p{
+            font-size:2em; color:black;
+        }
+    }
+    /* 스크린의 크기가 1000px 이상*/
+    @media screen and (min-width:1000px){
+        #AllWrap{ width:80%; }
+        #content p{
+            font-size: 1em; color:green;
+        }
+    }
+    /* 스크린의 크기가 641~999px사이 */
+    @media screen and (min-width:641px) and (max-width:999px){
+        #AllWrap{ width:100%; }
+        #content p{
+            font-size: 1.5em; color:red;
+            background-color: black;
+        }
+    }
+
+    </style>
+</head>
+<body>
+<div id="AllWrap">
+    <div id="PartWrap">
+        <div id="header">
+            <h1>HEADER</h1>
+        </div>
+        <div id = "nav">
+            <ul>
+                <li>메뉴1입니다</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+                <li>메뉴5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="ContentWrap">
+        <div id="content">
+         
+            <h2>'이제 펭수의 샤프란 아우라가 온다’…첫 펭수 TV광고</h2>
+            <p> 
+                LG생활건강(대표 차석용)은 섬유유연제 브랜드 ‘샤프란 아우라’의 모델 ‘펭수’가 출연하는 첫번째 TV 광고를 선보였다. ‘이제 펭수의 샤프란 아우라가 온다’는 컨셉트로, 향기를 오래 유지하기 위해 미세 플라스틱 향기캡슐(이하 향기캡슐)을 사용하는 섬유유연제와 차별성을 부각했다.
+                <br><br>
+                샤프란 아우라는 지난달 27일부터 대세 크리에이터 펭수가 출연하는 TV 광고를 방영했다. 샤프란 아우라 ‘펭수 에디션’에 이은 두번째 콜라보레이션이다. 광고는 펭수를 중심으로 섬유유연제 소비자들이 다같이 등장하는 장면부터 시작한다. 섬유유연제 시장을 미세 플라스틱 향기캡슐이 없는 제품으로 재편하겠다는 각오가 엿보인다.
+                <br><br>
+                펭수는 특유의 당당한 말투와 익살스러운 몸짓으로 지구를 위해 섬유유연제 속 향기캡슐의 퇴출을 명령하고, 향기캡슐 없는 섬유유연제인 샤프란 아우라를 추켜세우며 마무리한다. 광고에 등장하는 제품은 샤프란 아우라 프레시 딜라이트로, 향기캡슐을 없애고 향 성분을 강화해 은은한 향이 오래 유지되도록 개발됐다.
+                <br><br>
+                펭수 TV광고는 온라인에서도 많은 관심을 받고 있다. 누리꾼들은 ‘당장 섬유유연제를 샤프란으로 바꾸겠다’, ‘펭수의 고향을 지키자’ 등으로 호응했다. LG생활건강 관계자는 “펭수의 연기력과 다양한 애드리브가 광고를 생기 있고 풍성하게 만들었다”면서 “샤프란 아우라는 펭수와 함께 환경을 위한 홍보활동을 계속 할 것”이라고 말했다.
+                <br><br>
+                샤프란 아우라는 향기캡슐을 넣지 않은 대표적인 섬유유연제로, 올해 1월 펭수를 모델로 발탁하고 해양 오염 원인 중 하나인 미세 플라스틱을 줄이는 홍보활동을 전개하고 있다. 지난 2월에는 샤프란 아우라 ‘펭수 에디션’을 선보였다.
+                <br><br>
+                한편 LG생활건강은 2018년 8월부터 모든 섬유유연제에 향기 캡슐을 넣지 않고 있다. 향기캡슐은 세탁 과정에서 일부 하천이나 바다로 유입돼 수(水) 생태계를 교란한다. 옷이나 이불, 수건 등에 남아있는 향기캡슐은 향을 오래 유지할 수 있는 반면 소비자가 모르는 사이 인체와 직접적인 접촉이 일어날 수 있다.
+                <br><br>
+            </p>  
+            
+        </div>
+    </div>
+    <div id="footer">
+        <h1>FOOTER</h1>
+    </div>
+</div>
+</body>
+</html>
